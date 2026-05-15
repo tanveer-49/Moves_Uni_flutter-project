@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'manage_users.dart';
+import 'manage_buses_screen.dart';
 
 class AdminDashboardScreen extends StatelessWidget {
   const AdminDashboardScreen({super.key});
@@ -40,7 +41,23 @@ class AdminDashboardScreen extends StatelessWidget {
                       ),
                     );
                   },
-                )
+                ),
+                ListTile(
+                  leading:
+                  const Icon(Icons.directions_bus, color: Colors.white),
+                  title: const Text(
+                    'Manage Buses',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const ManageBusesScreen(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
           ),
