@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "12725935403",
+    "project_id": "university-bus-system-c14e9",
+    "storage_bucket": "university-bus-system-c14e9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12725935403:android:0a581e9331fcaff58a396e",
+        "android_client_info": {
+          "package_name": "com.example.moves_uni"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-DKdzHqWH8I3ClbKYY_T4NwGGLW30TMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
