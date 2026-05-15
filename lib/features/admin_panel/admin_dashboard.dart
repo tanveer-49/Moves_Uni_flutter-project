@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'manage_users.dart';
 import 'manage_buses_screen.dart';
+import 'manage_routes_screen.dart';
 
 class AdminDashboardScreen extends StatelessWidget {
   const AdminDashboardScreen({super.key});
@@ -54,6 +55,21 @@ class AdminDashboardScreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (_) => const ManageBusesScreen(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.route, color: Colors.white),
+                  title: const Text(
+                    'Manage Routes',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const ManageRoutesScreen(),
                       ),
                     );
                   },

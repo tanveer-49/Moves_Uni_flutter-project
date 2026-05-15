@@ -28,4 +28,14 @@ class BusModel {
       'driverName': driverName,
     };
   }
+
+  // ✅ IMPORTANT: Add this for DropdownButton to work properly
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    return other is BusModel && other.busId == busId;
+  }
+
+  @override
+  int get hashCode => busId.hashCode;
 }
